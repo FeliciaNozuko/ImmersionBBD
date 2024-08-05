@@ -17,6 +17,6 @@ document
 function applyButton() {
   document.getElementById("applyButton");
   applyButton.addEventListener("click", function () {
-    window.location.href = "";
+    window.location.href = "apply.html";
   });
 }
