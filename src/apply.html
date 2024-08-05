@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to BBD Umuzi Immersion Day</h1>
+      <form id="applicationForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required />
+
+        <label for="cohort">Cohort:</label>
+        <input type="text" id="cohort" name="cohort" required />
+
+        <label for="province">Province:</label>
+        <select id="province" name="province" required>
+          <option value="" disabled selected>Select your province</option>
+          <option value="Gauteng">Gauteng</option>
+          <option value="Western Cape">Western Cape</option>
+          <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+          <option value="Eastern Cape">Eastern Cape</option>
+          <option value="Limpopo">Limpopo</option>
+          <option value="Mpumalanga">Mpumalanga</option>
+          <option value="North West">North West</option>
+          <option value="Free State">Free State</option>
+          <option value="Northern Cape">Northern Cape</option></select
+        ><br />
+        <button>Submit</button>
+      </form>
+    </div>
+    <script src="home.js"></script>
+  </body>
+</html>
