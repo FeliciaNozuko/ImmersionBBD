@@ -5,16 +5,19 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f4f4f4;
+  background-image: url("/ImmersionBBD/images/umuzilogo.png");
+  animation: changeBackground 25s infinite ease-in-out;
 }
 
 .container {
   text-align: center;
-  background: white;
+  background: rgba(198, 4, 4, 0.4);
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: auto;
+  backdrop-filter: blur(40px);
+  
 }
 
 label {
@@ -49,4 +52,15 @@ button:hover {
   display: none;
   color: green;
   font-weight: bold;
+}
+
+@keyframes changeBackground {
+  0%
+  {
+    background-image: url("/ImmersionBBD/images/umuzilogo.png")
+  }
+  50%
+  {
+    background-image: url("/ImmersionBBD/images/bbdlogo.png");
+  }
 }
