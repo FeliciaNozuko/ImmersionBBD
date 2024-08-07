@@ -26,7 +26,7 @@ document.getElementById('province').addEventListener('change', (event) => {
 
   switch (selectedValue) {
     case 'Gauteng':
-      alert(`You can attend the event in-person`);
+      alert(`You can attend the event in person`);
       break;
     default:
       alert(
