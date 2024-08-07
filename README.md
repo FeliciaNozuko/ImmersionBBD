@@ -1,0 +1,1 @@
+On this website, you can apply to participate in the Immersion Day event hosted by BBD Software and Umuzi. After filling in your details, you will receive a pop message with whether you can attend the event physically at the BBD offices or attend online, depending on your province of residence.
