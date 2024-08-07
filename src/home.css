@@ -69,8 +69,10 @@ button:hover {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  height: 25%;
   max-width: 500px;
   border-radius: 8px;
+  position: relative;
 }
 
 .close {
@@ -85,4 +87,21 @@ button:hover {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.ok-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #5cb85c;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ok-button:hover {
+  background-color: #4cae4c;
 }
