@@ -5,7 +5,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-image: url("/ImmersionBBD/images/umuzilogo.png");
+  background-image: url("/images/umuzilogo.png");
   animation: changeBackground 25s infinite ease-in-out;
 }
 
@@ -88,11 +88,11 @@ button:hover {
 @keyframes changeBackground {
   0%
   {
-    background-image: url("/ImmersionBBD/images/umuzilogo.png")
+    background-image: url("/images/umuzilogo.png")
   }
   50%
   {
-    background-image: url("/ImmersionBBD/images/bbdlogo.png");
+    background-image: url("/images/bbdlogo.png");
   }
 
 }
