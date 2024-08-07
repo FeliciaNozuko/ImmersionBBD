@@ -21,16 +21,40 @@ function applyButton() {
   });
 }
 
-document.getElementById('province').addEventListener('change', (event) => {
-  const selectedValue = event.target.value;
+function showModal(title, message) {
+  const modal = document.getElementById('myModal');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalMessage = document.getElementById('modalMessage');
+  const closeButton = document.querySelector('.close');
 
-  switch (selectedValue) {
-    case 'Gauteng':
-      alert(`You can attend the event in person`);
-      break;
-    default:
-      alert(
-        `You're only eligible to attend the event virtually, because you're outside of Gauteng`
+  modalTitle.textContent = title;
+  modalMessage.textContent = message;
+  modal.style.display = 'block';
+
+  closeButton.onclick = function () {
+    modal.style.display = 'none';
+  };
+
+  window.onclick = function (event) {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  };
+}
+
+document
+  .getElementById('province')
+  .addEventListener('change', function (event) {
+    const selectedValue = event.target.value;
+
+    if (selectedValue === '') {
+      showModal('Selection Required', 'Please select a province.');
+    } else if (selectedValue === 'Gauteng') {
+      showModal('Attendance', 'You can attend the event in person.');
+    } else {
+      showModal(
+        'Attendance',
+        "You're only eligible to attend the event virtually, because you're outside Gauteng."
       );
-  }
-});
+    }
+  });
