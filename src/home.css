@@ -38,14 +38,14 @@ button {
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
-  background-color: #5cb85c;
-  color: white;
+  background-color: #ff812c;
+  color: black;
   cursor: pointer;
   border-radius: 50px;
 }
 
 button:hover {
-  background-color: #4cae4c;
+  background-color: red;
 }
 
 .hidden {
@@ -63,4 +63,5 @@ button:hover {
   {
     background-image: url("/ImmersionBBD/images/bbdlogo.png");
   }
+
 }
