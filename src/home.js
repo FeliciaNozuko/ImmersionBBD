@@ -1,22 +1,24 @@
-document
-  .getElementById("applicationForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
+document.getElementById("applicationForm").addEventListener("submit", function (event) {
+  event.preventDefault();
 
-    const email = document.getElementById("email").value;
+  const formData = new FormData(this);
+  const jsonData = {};
+  formData.forEach((value, key) => {
+    jsonData[key] = value;
+  });
 
-    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this).then(
-      function (response) {
-        document.getElementById("successMessage").classList.remove("hidden");
-      },
-      function (error) {
-        console.error("Failed to send email", error);
-      }
-    );
-  });
-function applyButton() {
-  document.getElementById("applyButton");
-  applyButton.addEventListener("click", function () {
-    window.location.href = "apply.html";
-  });
-}
+  fetch('/submit', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(jsonData),
+  })
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("successMessage").classList.remove("hidden");
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+});
