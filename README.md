@@ -1,6 +1,6 @@
 ## Immersion Day App
-## This App was deployed to Vercel
-https://immersion-bbd-jh66.vercel.app/
+## This App is deployed to Vercel
+`https://immersion-bbd-jh66.vercel.app/`
 
 ## Overview
 The Immersion Day App is a web application designed for learners to apply for immersion days. Built using JavaScript, HTML5, and CSS, this app allows users to submit their cohort, email and Province. The application is responsive and does not use media queries to achieve its layout. It also uses PostgreSQL as its database.
