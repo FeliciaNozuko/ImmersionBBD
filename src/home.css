@@ -17,7 +17,6 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: auto;
   backdrop-filter: blur(40px);
-  
 }
 
 label {
@@ -72,7 +71,7 @@ button:hover {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  height: 25%;
+  height: auto;
   max-width: 500px;
   border-radius: 8px;
   position: relative;
@@ -86,15 +85,12 @@ button:hover {
 }
 
 @keyframes changeBackground {
-  0%
-  {
-    background-image: url("/images/umuzilogo.png")
+  0% {
+    background-image: url("/images/umuzilogo.png");
   }
-  50%
-  {
+  50% {
     background-image: url("/images/bbdlogo.png");
   }
-
 }
 
 .ok-button {
